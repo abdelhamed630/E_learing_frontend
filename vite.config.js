@@ -6,8 +6,8 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/api': { target: 'http://localhost:8000', changeOrigin: true },
-      '/media': { target: 'http://localhost:8000', changeOrigin: true }
+      '/api': { target: 'https://elearing-production-2841.up.railway.app', changeOrigin: true },
+      '/media': { target: 'https://elearing-production-2841.up.railway.app', changeOrigin: true }
     }
   },
   build: {
